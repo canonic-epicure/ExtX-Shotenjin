@@ -24,8 +24,8 @@ StartTest(function(t) {
             
             template : new Shotenjin.Joosed.Template({
                 /*tj
-                    name : [% name %]
-                    value : [% value %]
+                    name1 : [% name %]
+                    value1 : [% value %]
                 tj*/
             })
         })
@@ -40,7 +40,7 @@ StartTest(function(t) {
         
         t.ok(cont.rendered && cont.getEl().dom, 'Container was rendered')
         
-        t.ok(/name : name1\svalue : value1/.test(cont.getEl().dom.innerHTML), 'Content of the container is correct')
+        t.ok(/name1 : name1\svalue1 : value1/.test(cont.getEl().dom.innerHTML), 'Content of the container is correct')
         
         
         
@@ -50,14 +50,14 @@ StartTest(function(t) {
         var cont2 = new ExtX.Shotenjin.Container({
             
             templateData : {
-                name : 'name1',
-                value : 'value1'
+                name : 'name2',
+                value : 'value2'
             },
             
             templateSources : {
                 /*tj
-                    name : [% name %]
-                    value : [% value %]
+                    name2 : [% name %]
+                    value2 : [% value %]
                 tj*/
             }
         })
@@ -72,7 +72,7 @@ StartTest(function(t) {
         
         t.ok(cont2.rendered && cont2.getEl().dom, 'Container was rendered')
         
-        t.ok(/name : name1\svalue : value1/.test(cont2.getEl().dom.innerHTML), 'Content of the container is correct')
+        t.ok(/name2 : name2\svalue2 : value2/.test(cont2.getEl().dom.innerHTML), 'Content of the container is correct')
         
         
         t.endAsync(async0)
