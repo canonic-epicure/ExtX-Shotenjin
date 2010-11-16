@@ -17,6 +17,7 @@ Harness.configure({
     
     preload : [
         "jsan:Task.Joose.Core",
+        "jsan:Task.JooseX.Attribute.Bootstrap",
         "jsan:Task.JooseX.Namespace.Depended.Auto",
         {
             text : "JooseX.Namespace.Depended.Manager.my.INC = " + Harness.prepareINC(INC)
@@ -26,6 +27,7 @@ Harness.configure({
 
 
 Harness.start(
-    '010_sanity.t.js'
+    '010_sanity.t.js',
+    '020_container.t.js'
 )
 
