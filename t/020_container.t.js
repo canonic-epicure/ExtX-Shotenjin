@@ -54,7 +54,7 @@ StartTest(function(t) {
                 value : 'value2'
             },
             
-            templateSources : {
+            template : {
                 /*tj
                     name2 : [% name %]
                     value2 : [% value %]

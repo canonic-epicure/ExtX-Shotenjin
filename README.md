@@ -62,44 +62,40 @@ This package also contains the `ExtX.Shotenjin.Container` and `ExtX.Shotenjin.Pa
 and implements `ExtX.Shotenjin` role.
 
 
-<div style="display : none">
 
 ATTRIBUTES
 ==========
 
-### attributeName
+### template
 
-> `AttributeType attributeName`
+> `Shotenjin.Template template`
 
-> Attribute description
+> Template to render. Can be provided as `Shotenjin.Template` instance or as the sources (see synopsys)
+
+
+### templateData
+
+> `Object templateData`
+
+> Object which will be passed to `render` method of the template.
+
+
+### templateClass
+
+> `Class templateClass`
+
+> Template class to use when instantiating the template from sources. Defaults to `Shotenjin.Template`.
 
 
 METHODS
 =======
 
-### methodName
+### refresh
 
-> `method signature`
+> `refresh(stash)`
 
-> Method description
+> This method will update the content of the component using the new data, passed as `stash` argument.
 
-
-EXAMPLES
-========
-
-Our class can be used like this:
-
-        // then instantiating it
-        var instance = new ExtX.Shotenjin({
-        })
-
-and like that:
-
-        // then instantiating it
-        var instance = new ExtX.Shotenjin({
-        })
-        
-</div>
 
 
 GETTING HELP
