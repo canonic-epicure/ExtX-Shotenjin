@@ -7,17 +7,21 @@ ExtX.Shotenjin - Some clever yet compact description
 SYNOPSIS
 ========
 
-        // declaring our class
-        Class('ExtX.Shotenjin', {
+        var container = new ExtX.Shotenjin.Container({
         
+            template : {
+                /*tj
+                
+                    Hello [% world %]
+                
+                tj*/
+            },
+            
+            templateData : {
+                world   : 'World!'
+            }
         })
         
-        // then instantiating it
-        var instance = new ExtX.Shotenjin({
-        })
-        
-        // and doing something totally awesome with it :D
-        instance.method(param1, param2)
         
 
 If you are reading this file as README from github, you may want to open [this link](http://samuraijack.github.com/ExtX-Shotenjin) instead. 
@@ -52,27 +56,13 @@ In browsers (assuming you've completed the 3.1 item from this [document](http://
 DESCRIPTION
 ===========
 
-`ExtX.Shotenjin` is a stub for Joose-orientied JSAN modules.
+`ExtX.Shotenjin` is a role for ExtJS container subclass, which uses the [Shotenjin](http://samuraijack.github.com/Shotenjin/) template for rendering.
+
+This package also contains the `ExtX.Shotenjin.Container` and `ExtX.Shotenjin.Panel` classes which are subclasses of according ExtJS components
+and implements `ExtX.Shotenjin` role.
 
 
-ISA
-===
-
-None.
-
-
-DOES
-====
-
-None.
-
-
-TRAITS
-======
-
-None.
-
-
+<div style="display : none">
 
 ATTRIBUTES
 ==========
@@ -108,6 +98,8 @@ and like that:
         // then instantiating it
         var instance = new ExtX.Shotenjin({
         })
+        
+</div>
 
 
 GETTING HELP
@@ -122,6 +114,8 @@ on irc.freenode.org or mailing list at: <http://groups.google.com/group/joose-js
 
 SEE ALSO
 ========
+
+Shotenjin template engine: [Shotenjin](http://samuraijack.github.com/Shotenjin/)
 
 Web page of this module: <http://github.com/SamuraiJack/ExtX-Shotenjin/>
 
