@@ -20,7 +20,7 @@ Harness.configure({
         "jsan:Task.JooseX.Attribute.Bootstrap",
         "jsan:Task.JooseX.Namespace.Depended.Auto",
         {
-            text : "JooseX.Namespace.Depended.Manager.my.INC = " + Harness.prepareINC(INC)
+            text : "use.paths = " + Harness.prepareINC(INC)
         },
         "jsan:Task.ExtJS.Adapter.Ext",
         'jsan:JooseX.Bridge.Ext',

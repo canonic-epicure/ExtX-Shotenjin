@@ -1,5 +1,3 @@
-If links in this document aren't work correctly, [try to open it from here](http://samuraijack.github.com/ExtX-Shotenjin)
-
 Name
 ====
 
@@ -21,6 +19,34 @@ SYNOPSIS
         // and doing something totally awesome with it :D
         instance.method(param1, param2)
         
+
+If you are reading this file as README from github, you may want to open [this link](http://samuraijack.github.com/ExtX-Shotenjin) instead. 
+
+
+INSTALLATION
+============
+
+From `npm`:
+    
+    > [sudo] npm install extx-shotenjin
+
+Tarballs are available for downloading at: <http://search.npmjs.org/#/extx-shotenjin>
+
+
+SETUP
+=====
+
+In NodeJS:
+
+    require('task-joose-nodejs')
+    require('extx-shotenjin')
+    
+    
+In browsers (assuming you've completed the 3.1 item from this [document](http://joose.github.com/Joose/doc/html/Joose/Manual/Installation.html)):
+
+    <script type="text/javascript" src="/jsan/Task/Joose/Core.js"></script>
+    <script type="text/javascript" src="/jsan/Task/ExtX/Shotenjin/Core.js"></script>
+
 
 
 DESCRIPTION
@@ -123,7 +149,7 @@ Nickolay Platonov <nplatonov@cpan.org>
 COPYRIGHT AND LICENSE
 =====================
 
-This software is Copyright (c) 2010 by Nickolay Platonov.
+This software is Copyright (c) 2011 by Nickolay Platonov.
 
 This is free software, licensed under:
 
