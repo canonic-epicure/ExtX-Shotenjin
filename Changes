@@ -2,6 +2,8 @@ Release history for ExtX.Shotenjin
 
 {{$NEXT}}
 
+        - also allow to specify the template as the initial value for the `template` attribute of the class
+
 0.0.1     2011-01-17 17:32
 
         First version, released on an unsuspecting world.
