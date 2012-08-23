@@ -1,3 +1,4 @@
+[![build status](https://secure.travis-ci.org/SamuraiJack/ExtX-Shotenjin.png)](http://travis-ci.org/SamuraiJack/ExtX-Shotenjin)
 Name
 ====
 
